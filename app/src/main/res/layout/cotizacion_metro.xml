@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutgeneral"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="trizio.ram.com.triziocomandroidgradlenuevo.CotizacionMETRO">
+
+
+
+        <LinearLayout
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rombo"
+                        android:id="@+id/textView"
+                        />
+
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/button3"
+                        android:background="@drawable/search"
+                        android:onClick="buscarRombo"/>
+
+                    <EditText
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText_rombo"
+                        android:layout_weight="0.2"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placa"
+                        android:id="@+id/textView2"/>
+
+                    <EditText
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:id="@+id/editText_placa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OT"
+                        android:id="@+id/OT"/>
+
+                    <EditText
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_OT"
+                        android:layout_weight="0.2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COT"
+                        android:id="@+id/textView3" />
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/button_buscar_cot"
+                        android:background="@drawable/search"
+                        android:onClick="buscarCot"/>
+
+                    <EditText
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText_numero"
+                        android:layout_weight="0.2"
+                        android:focusable="false"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fecha"
+                        android:text="Fecha"/>
+
+                    <EditText
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_Fecha"
+                        android:layout_weight="0.5"/>
+
+                    <Button
+                        android:layout_margin="0dp"
+                        style="@style/proyectoWMS_METRO_Theme.Button.CancelarLogin"
+                        android:textColor="#FFFFFF"
+                        android:text="CANCELAR"
+                        android:id="@+id/button2"
+                        android:onClick="cancelar"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:orientation="vertical"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape">
+
+
+                        <ListView
+                            android:layout_margin="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/listaMarcas"
+                            android:layout_gravity="center">
+
+                        </ListView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape">
+
+                        <ListView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/listaRef">
+
+                        </ListView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape">
+
+                        <ListView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/listaModelo">
+
+                        </ListView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+
+                    <View
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nit"
+                            android:id="@+id/textView4"/>
+
+                        <EditText
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editText_nit"
+                            android:layout_weight="0.35" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre"
+                            android:id="@+id/textView5"/>
+
+                        <EditText
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editText_nombre"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView_marca"
+                            android:text="Marca"/>
+
+                        <EditText
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:id="@+id/editText_marca"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView_referencia"
+                            android:text="Referencia"/>
+
+                        <EditText
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:id="@+id/editText_referencia"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView_modelo"
+                            android:text="Modelo"/>
+
+                        <EditText
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:id="@+id/editText_modelo"/>
+
+                        <Spinner
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/spinner_lista">
+
+                        </Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <Button
+                            style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+                            android:text="COTIZACION"
+                            android:id="@+id/button"
+                            android:textColor="#FFFFFF"
+                            android:onClick="prueba"/>
+
+                        <Button
+                            style="@style/proyectoWMS_METRO_Theme.Button"
+                            android:text="PEDIDO"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="pedido"
+                            />
+
+                        <AutoCompleteTextView
+                            android:gravity="center"
+                            android:hint="Seleccione el codigo"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editCodigo"
+                            />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/plus"
+                            android:onClick="añadir"
+                            android:id="@+id/button4" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center">
+
+                <TableLayout
+                    android:id="@+id/cabecera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutdetalle"
+                android:layout_height="270dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center">
+
+
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView" >
+
+                    <TableLayout
+                        android:id="@+id/tabla"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TableLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TableLayout
+                    android:id="@+id/tablaTotales"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TableLayout>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+
+
+                <Spinner
+                    android:visibility="gone"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/spinner_producto"
+                    android:background="@drawable/cell_shape"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="77dp" />
+
+
+
+                <Spinner
+                    android:visibility="gone"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/spinner_añadir"
+                    android:background="@drawable/cell_shape"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/spinner_producto" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center">
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

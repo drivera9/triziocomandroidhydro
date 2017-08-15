@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="trizio.ram.com.triziocomandroidgradlenuevo.Recepcion"
+    android:id="@+id/procesos"
+    style="@style/proyectoWMS_METRO_Theme.Layout.RelativeProcesos"
+    >
+
+
+    <ScrollView
+        style="@style/proyectoWMS_METRO_Theme.ScrollView"
+        android:id="@+id/ScrollRecepcion"
+        >
+
+    <LinearLayout
+        style="@style/proyectoWMS_METRO_Theme.Layout.LinearLogin">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start">
+
+                <Button
+                    android:background="@drawable/fullscreen"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/button11"
+                    android:onClick="ampliar"/>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/botoneditar"
+                    android:background="@drawable/editar"
+                    android:onClick="editar"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/button_refresh"
+                    android:background="@drawable/renew"
+                    android:onClick="refrescar"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/button11" />
+
+                <Button
+                    android:background="@drawable/ic_publish_black_24dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/button_upload"
+                    android:onClick="uploadFoto"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+                style="@style/proyectoWMS_METRO_Theme.ImageView.ImageRecepcion"
+                android:id="@+id/imageView"
+                android:onClick="camara"
+                />
+
+
+
+        <TextView
+        style="@style/proyectoWMS_METRO_Theme.TextView.TextViewRecepcion"
+        android:id="@+id/textView_atributo"/>
+
+
+
+        <LinearLayout
+            style="@style/proyectoWMS_METRO_Theme.Layout.LinearHorizontal">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/button_buscar"
+                android:background="@drawable/search"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextRecepcion"
+                android:layout_margin="0dp"
+                android:id="@+id/editText_texto">
+
+                <requestFocus />
+            </EditText>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/button_anadir"
+                android:background="@drawable/plus"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:visibility="invisible"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/borrartodo"
+                android:onClick="borrartodo"
+                android:background="@drawable/delete"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_error"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:visibility="invisible"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/quitarespacios"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="quitarespacios"
+                android:background="@drawable/limpiar"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            style="@style/proyectoWMS_METRO_Theme.Layout.LinearHorizontal"
+            >
+
+    <ImageButton
+        style="@style/proyectoWMS_METRO_Theme.Button.WizardButton.First"
+        android:id="@+id/imageButton6"
+        android:onClick="anteriorPrimero"/>
+
+    <ImageButton
+        style="@style/proyectoWMS_METRO_Theme.Button.WizardButton.Previous"
+        android:id="@+id/imageButton7"
+        android:onClick="atras"/>
+
+    <ImageButton
+        style="@style/proyectoWMS_METRO_Theme.Button.WizardButton.Next"
+        android:id="@+id/imageButton8"/>
+
+    <ImageButton
+        style="@style/proyectoWMS_METRO_Theme.Button.WizardButton.Last"
+        android:id="@+id/imageButton9"
+        android:onClick="anteriorUltimo"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/proyectoWMS_METRO_Theme.Layout.LinearHorizontal"
+            >
+    <Button
+        style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+        android:layout_margin="10dp"
+        android:text="VER"
+        android:id="@+id/button_OK"
+        android:onClick="ok" />
+
+    <Button
+        style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+        android:layout_margin="10dp"
+        android:text="ENTER"
+        android:id="@+id/button_enter"
+        android:onClick="enter" />
+
+
+    <Button
+        style="@style/proyectoWMS_METRO_Theme.Button.CancelarLogin"
+        android:layout_margin="10dp"
+        android:text="SALIR"
+        android:id="@+id/button3"
+        android:onClick="cancelar" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/proyectoWMS_METRO_Theme.Layout.RelativeProcesos"
+    tools:context=".MostrarRombUbic">
+
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/gridView4"
+        android:layout_centerHorizontal="true"
+        android:numColumns="1"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/texto" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:layout_above="@+id/editNota"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:lines="4"
+        android:gravity="center"
+        android:id="@+id/editNota"
+        android:layout_above="@+id/boton"
+        android:hint="Escriba o dicte la observacion"/>
+
+    <Button
+        android:id="@id/boton"
+        android:text="Aceptar"
+        style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+        android:onClick="aceptar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/appBarTheme"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linear">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/proyectoWMS_METRO_Theme.TextView"
+                    android:text="ATRIBUTO" />
+
+                <EditText
+                    android:id="@+id/editCodAtributo"
+                    style="@style/proyectoWMS_METRO_Theme.EditText" />
+
+                <TextView
+                    style="@style/proyectoWMS_METRO_Theme.TextView"
+                    android:text="VALOR POR DEFECTO" />
+
+                <EditText
+                    android:id="@+id/editCodValor"
+                    style="@style/proyectoWMS_METRO_Theme.EditText" />
+
+                <TextView
+                    style="@style/proyectoWMS_METRO_Theme.TextView"
+                    android:text="SECUENCIA" />
+
+                <EditText
+                    android:id="@+id/editNumSecuencia"
+                    style="@style/proyectoWMS_METRO_Theme.EditText" />
+
+                <TextView
+                    style="@style/proyectoWMS_METRO_Theme.TextView"
+                    android:text="MULTIREGISTRO" />
+
+                <EditText
+                    android:id="@+id/editIndAutoNext"
+                    style="@style/proyectoWMS_METRO_Theme.EditText" />
+
+                <TextView
+                    style="@style/proyectoWMS_METRO_Theme.TextView"
+                    android:text="ESTADO" />
+
+                <EditText
+                    android:id="@+id/editIndEstado"
+                    style="@style/proyectoWMS_METRO_Theme.EditText" />
+
+                <TextView
+                    style="@style/proyectoWMS_METRO_Theme.TextView"
+                    android:text="NOMBRE TABLA" />
+
+                <EditText
+                    android:id="@+id/editNomTabla"
+                    style="@style/proyectoWMS_METRO_Theme.EditText" />
+
+                <TextView
+                    style="@style/proyectoWMS_METRO_Theme.TextView"
+                    android:text="NOMBRE COLUMNA" />
+
+                <EditText
+                    android:id="@+id/editNomColumna"
+                    style="@style/proyectoWMS_METRO_Theme.EditText" />
+
+                <TextView
+                    style="@style/proyectoWMS_METRO_Theme.TextView"
+                    android:text="NOMBRE AGREGADO" />
+
+                <EditText
+                    android:id="@+id/editNomAgregado"
+                    style="@style/proyectoWMS_METRO_Theme.EditText" />
+
+                <TextView
+                    style="@style/proyectoWMS_METRO_Theme.TextView"
+                    android:text="FORMULA" />
+
+                <EditText
+                    android:id="@+id/editIndFormula"
+                    style="@style/proyectoWMS_METRO_Theme.EditText" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+                android:text="ACTUALIZAR"
+                android:onClick="actualizar"/>
+
+            <Button
+                style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+                android:text="ELIMINAR"
+                android:onClick="eliminar"/>
+
+            <Button
+                style="@style/proyectoWMS_METRO_Theme.Button.CancelarLogin"
+                android:text="CANCELAR"
+                android:onClick="cancelar"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

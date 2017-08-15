@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GuardarPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/GUARDAR">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/appBarTheme"
+        app:popupTheme="@style/proyectoWMS_METRO_Theme.PopupOverlay"
+        />
+
+
+    <GridView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:id="@+id/gridView5"
+        android:numColumns="2"
+        android:gravity="left"/>
+
+
+    <LinearLayout
+        android:layout_height="100dp"
+        style="@style/proyectoWMS_METRO_Theme.Layout.LinearLoginBotones">
+
+        <Button
+            style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+            android:text="Guardar"
+            android:id="@+id/button_guardar"
+            android:onClick="prueba" />
+
+        <Button
+            style="@style/proyectoWMS_METRO_Theme.Button.CancelarLogin"
+            android:text="Regresar"
+            android:id="@+id/button_regresar"
+            android:onClick="regresar" />
+    </LinearLayout>
+
+    <CheckBox
+        android:text="Enviar Correo"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkCorreo"
+        android:checked="false"
+        android:textColor="#000000"/>
+
+</LinearLayout>

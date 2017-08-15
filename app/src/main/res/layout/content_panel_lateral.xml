@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PanelLateral"
+    tools:showIn="@layout/app_bar_panel_lateral">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listViewProcesoCero"
+                style="@style/proyectoWMS_METRO_Theme"
+                android:layout_height="70dp" />
+
+            <ListView
+                android:visibility="gone"
+                android:id="@+id/listView2"
+                style="@style/proyectoWMS_METRO_Theme"
+                android:layout_height="70dp" />
+
+            <ListView
+                android:id="@+id/listViewPlacas"
+                style="@style/proyectoWMS_METRO_Theme"
+                android:layout_height="70dp" />
+
+            <ListView
+                android:id="@+id/listViewAsignarCitas"
+                style="@style/proyectoWMS_METRO_Theme"
+                android:layout_height="70dp" />
+
+            <ListView
+                android:id="@+id/listViewAjustesProcesos"
+                style="@style/proyectoWMS_METRO_Theme"
+                android:layout_height="70dp" />
+
+            <ListView
+                android:id="@+id/listViewReportes"
+                style="@style/proyectoWMS_METRO_Theme"
+                android:layout_height="70dp" />
+
+            <ListView
+                android:id="@+id/listViewCotizacion"
+                style="@style/proyectoWMS_METRO_Theme"
+                android:layout_height="70dp" />
+
+            <ListView
+                android:id="@+id/listViewConsultas"
+                style="@style/proyectoWMS_METRO_Theme"
+                android:layout_height="70dp" />
+
+            <ListView
+                android:id="@+id/listViewScanner"
+                style="@style/proyectoWMS_METRO_Theme"
+                android:layout_height="70dp" />
+
+            <ListView
+                android:id="@+id/listViewScannerPlaca"
+                style="@style/proyectoWMS_METRO_Theme"
+                android:layout_height="70dp" />
+
+            <ListView
+                android:id="@+id/listViewCambiarTecnico"
+                style="@style/proyectoWMS_METRO_Theme"
+                android:layout_height="70dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

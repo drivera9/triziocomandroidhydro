@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerResultado"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/proyectoWMS_METRO_Theme.PopupOverlay"
+        android:theme="@style/appBarTheme"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView"
+            android:layout_above="@+id/gridViewTotales">
+
+        </GridView>
+
+        <GridView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/gridViewTotales"
+            android:layout_alignParentBottom="true">
+
+        </GridView>
+    </RelativeLayout>
+
+</LinearLayout>

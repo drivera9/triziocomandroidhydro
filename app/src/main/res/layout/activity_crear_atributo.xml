@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="trizio.ram.com.triziocomandroidgradlenuevo.CrearAtributo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/appBarTheme"
+        />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/LayoutRelativeProcesos">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:onClick="añadir"
+                android:layout_gravity="end"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/plus"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:id="@+id/listView2"/>
+
+            <Button
+                android:layout_margin="30dp"
+                android:onClick="firmar"
+                style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+                android:layout_gravity="center"
+                android:text="FIRMAR"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

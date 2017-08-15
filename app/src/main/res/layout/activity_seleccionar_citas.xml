@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/proyectoWMS_METRO_Theme.TextView"
+            android:layout_margin="20dp"
+            android:text="CITAS DISPONIBLES" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="fechaInicial"
+                    android:text="FECHA INICIAL" />
+
+                <TextView
+                    android:id="@+id/textInicial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="fecha inicial" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="fechaFinal"
+                    android:text="FECHA FINAL" />
+
+                <TextView
+                    android:id="@+id/textFinal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="fecha final" />
+
+            </LinearLayout>
+
+            <Button
+                style="@style/proyectoWMS_METRO_Theme.Button.CancelarLogin"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:onClick="filtrar"
+                android:text="FILTRAR" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"></ListView>
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/appBarTheme"
+        app:popupTheme="@style/proyectoWMS_METRO_Theme.PopupOverlay"
+        />
+
+
+</LinearLayout>

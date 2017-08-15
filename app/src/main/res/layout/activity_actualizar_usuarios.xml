@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualizarUsuarios"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/appBarTheme"
+        app:popupTheme="@style/proyectoWMS_METRO_Theme.PopupOverlay"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="EMPRESA"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextBodega"
+                android:id="@+id/editEmpresa"/>
+
+            <TextView
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="SUCURSAL"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextBodega"
+                android:id="@+id/editSucursal"/>
+
+            <TextView
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="USUARIO"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextBodega"
+                android:id="@+id/editUsuario"/>
+
+            <TextView
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="NOMBRE USUARIO"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextBodega"
+                android:id="@+id/editNomUsuario"/>
+
+            <TextView
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="CLAVE"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextBodega"
+                android:id="@+id/editClave"/>
+
+            <TextView
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="TIPO USUARIO"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextBodega"
+                android:id="@+id/editTipo"/>
+
+            <TextView
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="PROCESO"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextBodega"
+                android:id="@+id/editProceso"/>
+
+            <TextView
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="ESTADO"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextBodega"
+                android:id="@+id/editEstado"/>
+
+            <TextView
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="IMEI"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextBodega"
+                android:id="@+id/editImei"/>
+
+            <TextView
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="REQUERIDO"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextBodega"
+                android:id="@+id/editRequerido"/>
+
+            <TextView
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="IP"/>
+
+            <EditText
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextBodega"
+                android:id="@+id/editIp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+
+            android:text="ACTUALIZAR"
+            android:onClick="actualizar"/>
+
+        <Button
+            style="@style/proyectoWMS_METRO_Theme.Button.CancelarLogin"
+
+            android:text="CANCELAR"
+            android:onClick="cancelar"/>
+    </LinearLayout>
+
+</RelativeLayout>

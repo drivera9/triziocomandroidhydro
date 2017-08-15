@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip" >
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lista"
+        android:layout_above="@id/linear"
+        android:layout_margin="10dp">
+
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/boton"
+        android:id="@+id/linear"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="("
+                android:onClick="parentesisizq"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text=")"
+                android:onClick="parentesisder"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:onClick="suma"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:onClick="resta"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="*"
+                android:onClick="multiplicacion"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="/"
+                android:onClick="division"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="BORRAR"
+                android:onClick="borrar"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="BORRAR TODO"
+                android:onClick="borrartodo"/>
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editFormula"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="GUARDAR"
+        android:onClick="guardar"
+        />
+</RelativeLayout>
